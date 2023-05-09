@@ -5,15 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/Home.unity
     guid: 91c2af4b636c52d47912cbc23c1411e7
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/Option.unity
     guid: e940d12303d7fd04eb30f0dc4da9db57
   - enabled: 1
-    path: Assets/Example/Scenes/BlankAR.unity
-    guid: 6bdce89659816455b9f906fc62d19910
+    path: Assets/Scene/DancingAR.unity
+    guid: 531fb869274a7824b8d353e44e06e572
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
