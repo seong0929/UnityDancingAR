@@ -17,17 +17,17 @@ EditorBuildSettings:
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
-    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 89a6d18d3df8d3e4fa917b0f9a963bc0,
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 18ed4407ee6a6354a9ef8d0f3c2d2856,
       type: 2}
-    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: de8a8e4f987434338a4b1062feb8d069,
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 26b837f9e35f0694ab248091b999783c,
       type: 2}
     com.unity.xr.arcore.PlayerSettings: {fileID: 11400000, guid: c2f7b8d7c0bff4d10874cbcf3f24af78,
       type: 2}
     com.unity.xr.arkit.PlayerSettings: {fileID: 11400000, guid: b27ec7d82a91a48e69fd689ad6808e5e,
       type: 2}
-    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 1eb95d77acb39444e8cf44313496a874,
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: b364e46c837f568499c67f2c0bcdfcb4,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 58f40b12bbc864f3c96c6505a9a1e1e3,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a848395eee91c6e4ca8a51a3db35f068,
       type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 6bb381a8ba31f114d9724357633b4625,
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: d6c4317ed051fbb4996f0f1a1e8c8316,
       type: 2}
