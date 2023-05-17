@@ -54,7 +54,8 @@ public class ARController : MonoBehaviour
                 alarm.GetComponent<Text>().text = "";
 
                 // 생성된 캐릭터에 AudioSource 컴포넌트를 추가하고 노래를 재생
-                GameManager.instance.PlaySoundOnInstantiate(characterObject);
+                characterObject.GetComponent<AudioSource>().volume = GameManager.instance.volume;
+                //characterObject.GetComponent<AudioSource>().Play();
 
                 // 캐릭터를 리스트에 추가
                 characters.Add(characterObject);
