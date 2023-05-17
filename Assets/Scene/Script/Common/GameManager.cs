@@ -31,6 +31,9 @@ public class GameManager : MonoBehaviour
         // 볼륨 조절
         audioSource.volume = volume;
 
+        // 루프 재생 설정
+        audioSource.loop = true;
+        
         // 재생
         audioSource.Play();
     }
