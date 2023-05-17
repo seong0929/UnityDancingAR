@@ -5,7 +5,7 @@ tiktok앱에 원신 캐릭터 '클레'라는 캐릭터가 AR로 춤을 추고 �
 
 아래는 해당 프로젝트 실행 영상과 실행 파일(안드로이드)이다. 평면을 우선 인식하고, 평면에 원이 존재하는 곳에 클릭을 해야 캐릭터가 등장하여 춤을 춘다.
 - [실행 영상](https://github.com/seong0929/UnityDancingAR/assets/50050003/124521cd-7a08-4e2e-b55a-6733fb92f425)
-- [실행 파일](https://github.com/seong0929/UnityDancingAR/blob/main/AndroidDancingAR.apk)
+- [실행 파일](https://github.com/seong0929/UnityDancingAR/tree/main/%EC%8B%A4%ED%96%89%20%ED%8C%8C%EC%9D%BC)
 
 해당 프로젝트의 핵심 코드이다.
 <pre>
