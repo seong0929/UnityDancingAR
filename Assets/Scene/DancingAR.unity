@@ -1038,6 +1038,7 @@ MonoBehaviour:
     type: 3}
   arRaycastManager: {fileID: 1659859601}
   alarm: {fileID: 1489834324}
+  maxCharacterCount: 5
 --- !u!114 &1659859601
 MonoBehaviour:
   m_ObjectHideFlags: 0

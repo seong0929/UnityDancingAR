@@ -3,13 +3,15 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.UI;
+
 public class ARController : MonoBehaviour
 {
     public GameObject characterPrefab; // 캐릭터 프리팹
     public ARRaycastManager arRaycastManager; // AR 레이캐스트 매니저
     public GameObject alarm;
+    public int maxCharacterCount = 5; // 최대 캐릭터 수
     private List<ARRaycastHit> hits = new List<ARRaycastHit>(); // 레이캐스트 히트 결과를 저장할 리스트
-    private bool isCharacterSpawned = false; // 캐릭터 생성 여부를 추적하는 변수
+    private int currentCharacterCount = 0; // 현재 캐릭터 수
 
     private void Awake()
     {
@@ -18,11 +20,8 @@ public class ARController : MonoBehaviour
 
     void Update()
     {
-        // 터치가 없으면 실행 X
-        if (Input.touchCount == 0) return;
-
-        // 이미 캐릭터가 생성되어 있는 경우, 추가 생성 방지
-        if (isCharacterSpawned) return;
+        // 터치가 없거나 최대 캐릭터 수를 초과하면 실행하지 않음
+        if (Input.touchCount == 0 || currentCharacterCount >= maxCharacterCount) return;
 
         if (arRaycastManager.Raycast(Input.GetTouch(0).position, hits, TrackableType.PlaneWithinPolygon))
         {
@@ -52,8 +51,8 @@ public class ARController : MonoBehaviour
                 // 생성된 캐릭터에 AudioSource 컴포넌트를 추가하고 노래를 재생
                 GameManager.instance.PlaySoundOnInstantiate(characterObject);
 
-                // 캐릭터가 생성되었음을 표시
-                isCharacterSpawned = true;
+                // 캐릭터 수 증가
+                currentCharacterCount++;
             }
             else
             {
@@ -65,6 +64,6 @@ public class ARController : MonoBehaviour
     void OnDisable()
     {
         hits.Clear();
-        isCharacterSpawned = false; // 캐릭터 생성 여부 초기화
+        currentCharacterCount = 0; // 캐릭터 수 초기화
     }
 }
