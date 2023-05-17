@@ -19,7 +19,7 @@ public class VolumeSlider : MonoBehaviour
     }
 
     // 볼륨 변경 이벤트 핸들러
-    private void OnVolumeChanged(float value)
+    public void OnVolumeChanged(float value)
     {
         // GameManager의 볼륨 값 업데이트
         gameManager.volume = value;
